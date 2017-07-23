@@ -13,6 +13,7 @@
 		4EDD85241F24EEBE003D1271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDD85221F24EEBE003D1271 /* Main.storyboard */; };
 		4EDD85261F24EEBE003D1271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDD85251F24EEBE003D1271 /* Assets.xcassets */; };
 		4EDD85291F24EEBE003D1271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDD85271F24EEBE003D1271 /* LaunchScreen.storyboard */; };
+		4EDD85331F24EFC8003D1271 /* BSModalDatePickerPeriodBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDD85321F24EFC8003D1271 /* BSModalDatePickerPeriodBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4EDD85251F24EEBE003D1271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDD85281F24EEBE003D1271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EDD852A1F24EEBE003D1271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EDD85311F24EFC8003D1271 /* BSModalDatePickerPeriodBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSModalDatePickerPeriodBase.h; sourceTree = "<group>"; };
+		4EDD85321F24EFC8003D1271 /* BSModalDatePickerPeriodBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSModalDatePickerPeriodBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		4EDD85181F24EEBE003D1271 /* 复合日历 */ = {
 			isa = PBXGroup;
 			children = (
+				4EDD85301F24EF93003D1271 /* BSModalPickerView */,
 				4EDD851C1F24EEBE003D1271 /* AppDelegate.h */,
 				4EDD851D1F24EEBE003D1271 /* AppDelegate.m */,
 				4EDD851F1F24EEBE003D1271 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				4EDD851A1F24EEBE003D1271 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EDD85301F24EF93003D1271 /* BSModalPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				4EDD85311F24EFC8003D1271 /* BSModalDatePickerPeriodBase.h */,
+				4EDD85321F24EFC8003D1271 /* BSModalDatePickerPeriodBase.m */,
+			);
+			name = BSModalPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					4EDD85151F24EEBE003D1271 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = P5LKK6955V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDD85331F24EFC8003D1271 /* BSModalDatePickerPeriodBase.m in Sources */,
 				4EDD85211F24EEBE003D1271 /* ViewController.m in Sources */,
 				4EDD851E1F24EEBE003D1271 /* AppDelegate.m in Sources */,
 				4EDD851B1F24EEBE003D1271 /* main.m in Sources */,
@@ -218,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -260,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -272,9 +287,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5LKK6955V;
 				INFOPLIST_FILE = "复合日历/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "test.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fisea.compositecalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -283,9 +299,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5LKK6955V;
 				INFOPLIST_FILE = "复合日历/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "test.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fisea.compositecalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
